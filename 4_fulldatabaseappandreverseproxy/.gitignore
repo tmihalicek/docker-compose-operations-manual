@@ -1,0 +1,11 @@
+# Ignore everything in backups/ except .gitkeep
+backups/*
+!backups/.gitkeep
+
+# Ignore everything in web/ except specific files
+web/*
+!web/nginx.conf
+
+# Ignore everything in web/crts/ except .gitkeep
+web/crts/*
+!web/crts/.gitkeep
