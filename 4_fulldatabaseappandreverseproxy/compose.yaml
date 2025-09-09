@@ -93,8 +93,8 @@ services:
   #   image: nginx:1.29.1-bookworm-perl
   #   restart: unless-stopped
   #   volumes:
-  #     - ./web/nginx.conf:/etc/nginx/conf.d/vaultwarden.conf:ro
-  #     - ./web/crts/:/etc/nginx/crts/:ro
+  #     - ./services/nginx/nginx.conf:/etc/nginx/conf.d/vaultwarden.conf:ro
+  #     - ./services/nginx/crts:/etc/nginx/crts/:ro
   #   healthcheck:
   #     test: ["CMD-SHELL", "curl -f http://localhost:80/ || exit 1"]
   #     interval: 10s
