@@ -7,7 +7,6 @@ services:
     volumes:
     # # step 1: Volume persistence
     #   - db-data:/var/lib/postgresql/data
-      - ./services/postgres/app_db.sql:/docker-entrypoint-initdb.d/app_db.sql
     environment:
       - POSTGRES_PASSWORD=pass1234
       - POSTGRES_USER=app_user
