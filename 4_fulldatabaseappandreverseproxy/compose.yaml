@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:17.6-trixie
+    image: postgres:17.5-bookworm
     restart: unless-stopped
     # # step 2: Hardening by removing unnecessary port
     ports:
