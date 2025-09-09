@@ -4,8 +4,8 @@ services:
     restart: unless-stopped
     # ports:
     #   - 5432:5432
-    volumes:
     # # step 1: Volume persistence
+    # volumes:
     #   - db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=pass1234
