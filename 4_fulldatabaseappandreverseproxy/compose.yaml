@@ -1,5 +1,7 @@
 services:
   postgres:
+    # # step 3: Update container image
+    # image: postgres:17.6-bookworm
     image: postgres:17.5-bookworm
     restart: unless-stopped
     # # step 2: Hardening by removing unnecessary port
@@ -57,7 +59,9 @@ services:
         max-size: "10m"
         max-file: "3"
   vaultwarden:
-    image: vaultwarden/server:1.34.3
+    # # step 3: Update container image
+    # image: vaultwarden/server:1.34.3
+    image: vaultwarden/server:1.34.2
     restart: unless-stopped
     volumes:
       - app-data:/data/
