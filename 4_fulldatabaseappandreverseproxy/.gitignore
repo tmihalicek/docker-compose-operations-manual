@@ -2,3 +2,5 @@
 backups/*
 !backups/.gitkeep
 
+services/nginx/crts/*
+!services/nginx/crts/.gitkeep
